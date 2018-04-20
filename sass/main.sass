@@ -1,0 +1,366 @@
+
+@import "fonts"
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+//Custom Styles Here
+
+.container
+	max-width: 1155px
+	border: 0px
+	margin: 0 auto
+	height: 100%
+
+.title 
+	margin-top: 10rem
+	margin-bottom: 5rem
+	h2, h5
+		color: black
+		text-align: center
+	h2
+		font-family: "Merriweather", Regular
+		font-size: 3.6rem
+	h5
+		font-family: "Open Sans", Bold
+		font-size: 1.4rem
+		text-transform: uppercase
+		color: #3a9c61
+
+	
+.skills
+	display: flex
+	justify-content: space-around
+	flex-wrap: wrap
+	color: black
+	align-items: center
+	margin-bottom: 7rem
+	@media all and (max-width: 768px)
+		flex-direction: column
+
+
+	.skill_item
+		display: flex
+		align-items: center
+		flex-direction: column
+		flex-basis: 30%
+		margin-bottom: 3rem
+		h3
+			font-family: "Merriweather", Bold
+			font-size: 2.4rem
+		p
+			text-align: center
+			font-family: "Open Sans"
+			font-size: 1.6rem
+
+	.skills_button
+		color: #3a9c61
+		border-color: #3a9c61
+		border-style: solid
+		border-width: 0.2rem
+		border-radius: 10rem
+		width: auto
+		padding: 1.6rem 5rem 1.6rem 5rem
+		text-align: center
+		text-transform: uppercase
+		font-weight: bold
+		font-size: 1.8rem
+		margin: 0.5rem 1.5rem
+		text-decoration: none
+		font-family: "Open Sans", Bold
+		font-size: 1.4rem
+		&:hover
+			text-decoration: none
+			color: #fff
+			background-color: #3a9c61
+		@media all and (max-width: 320px)
+	    	width: 100%
+
+#About 
+	background: #f2f0e9
+
+.about_me
+	display: flex
+	margin-bottom: 10rem
+	@media all and (max-width: 768px)
+		flex-direction: column
+
+	._me
+		display: flex
+		flex-direction: column
+		align-items: center
+		.logo
+			font-family: "Merriweather"
+			font-weight: bold
+			font-size: 2rem
+			color: #000
+		p
+			font-family: "Open Sans", Italic
+			font-size: 1.8rem
+			font-style: italic
+			color: #8c8984
+		a
+			font-family: "Open Sans"
+			font-size: 1.4rem
+			text-transform: uppercase
+			color: #3a9c61
+
+
+
+	.discription
+		display: flex
+		@media all and (max-width: 768px)
+			flex-direction: column
+
+		p
+			text-align: left
+			margin-left: 3rem
+			color: #504c47
+			font-family: "Open Sans"
+			font-size: 1.8rem
+	
+.wrap_works
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	margin-bottom: 10rem
+	@media all and (max-width: 768px)
+		flex-direction: column
+	.work
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-basis: 30%
+		height: 20rem
+		margin-bottom: 2rem
+
+		%img_wrk
+			border-radius: 1rem
+			position: absolute
+		.img_wrk1
+			@extend %img_wrk
+		.img_wrk2
+			@extend %img_wrk
+		.img_wrk3
+			@extend %img_wrk
+		.img_wrk4
+			@extend %img_wrk
+		.img_wrk5
+			@extend %img_wrk
+		.img_wrk6
+			@extend %img_wrk
+
+		%btn-project
+			height: 184px
+			width: 300px
+			display: none
+			text-align: center
+			margin: auto
+			font-family: "Open Sans"
+			font-weight: bold
+			font-size: 1.8rem
+			background-color: #d68319
+			opacity: 0.7
+			text-decoration: none
+			color: white
+			border-radius: 1rem
+		.btn-project1
+			@extend %btn-project
+
+		.btn-project2
+			@extend %btn-project
+
+		.btn-project3
+			@extend %btn-project
+
+		.btn-project4
+			@extend %btn-project
+
+		.btn-project5
+			@extend %btn-project
+
+		.btn-project6
+			@extend %btn-project
+
+.works_button
+	margin-top: 1.5rem
+	color: #3a9c61
+	border-color: #3a9c61
+	border-style: solid
+	border-width: 0.2rem
+	border-radius: 10rem
+	width: auto
+	padding: 1.6rem 7.5rem 1.6rem 7.5rem
+	text-align: center
+	text-transform: uppercase
+	font-weight: bold
+	font-size: 1.8rem
+	margin: 0.5rem 1.5rem
+	text-decoration: none
+	font-family: "Open Sans", Bold
+		font-size: 1.8rem
+	&:hover
+		text-decoration: none
+		color: #fff
+		background-color: #3a9c61
+	@media all and (max-width: 480px)
+    	width: 100%
+
+#Feedbacks
+	background: #f2f0e9
+	.wrap
+		margin-bottom: 10rem
+		.slider
+			text-align: center
+			.slide
+				color: #65615d
+				text-align: center
+				font-family: "Merriweather"			
+				font-size: 2.4rem
+				.img-wrap
+					display: flex
+					justify-content: center
+					align-items: center
+					img
+						margin-right: 2rem
+						border-width: 0.3rem
+						border-radius: 10rem
+						overflow: hidden
+						border-color: #fff
+
+			.slick-dots
+				display: flex
+				justify-content: center
+				li button
+					padding: 0px
+.contact
+	text-align: center
+	
+
+.contact_button
+	display: inline-block
+	background: #e98e19
+	color: #fff
+	border-radius: 10rem
+	width: auto
+	padding: 1.8rem 5.2rem 1.8rem 5.2rem
+	text-align: center
+	text-transform: uppercase
+	font-weight: bold
+	font-size: 1.8rem
+	margin: 0.5rem 1.5rem
+	text-decoration: none
+	margin-bottom: 10rem
+	&:hover
+		text-decoration: none
+		color: #e98e19
+		background-color: #fff
+		border: 2px solid #e98e19
+		padding: 1.6rem 5rem 1.6rem 5rem
+	@media all and (max-width: 480px)
+    	width: 100%
+
+footer
+	background-color: #241e18
+	text-align: center
+	h5
+		margin-top: 5rem
+		color: #9c9896
+	.social
+		.fa 
+			margin-right: 1rem
+			margin-bottom: 5rem
+			&:hover
+				color: #e98e19
+				cursor: pointer
+
+
+
+
+
+form
+	max-width: 48rem
+	display: flex
+	flex-direction: column 
+	margin: auto
+	text-align: center
+	position: relative
+
+	input
+		margin-bottom: 1.5rem
+		border-radius: 0.5rem
+		color: #000
+
+	textarea
+		border-radius: 0.5rem
+		margin-bottom: 1.5rem
+		color: #000
+
+	button
+		background: #e98e19
+		color: #fff
+		border-radius: 10rem
+		padding: 1.8rem 5.2rem 1.8rem 5.2rem
+		text-align: center
+		text-transform: uppercase
+		font-weight: bold
+		font-size: 1.8rem
+		border-width: 0px
+		margin: auto
+		
+
+
+
+		
+		
+		
+
+
+			
+				
+            
+
+
+
+
+
+
+		
+
+
+
+
+	
+	
+    	
+	
+	
+	
+	
+
+
+//ALWAYS END
+
